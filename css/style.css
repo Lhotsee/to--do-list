@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.24);
+    font-family: ;
+}
