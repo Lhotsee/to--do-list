@@ -6,11 +6,15 @@
 
 .tasks__item {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.321);
+}
+
+.tasks__item--hidden {
+    display: none;
 }
 
 .tasks__content--done {
@@ -23,7 +27,13 @@
     padding: 0;
     width: 30px;
     height: 30px;
+    transition: background 0.3s;
 }
+/* 
+.tasks__button--icon {
+    display: inline-block;
+    vertical-align: middle;
+} */
 
 .tasks__button--toggleDone {
     background-color: hsl(120, 100%, 25%);
